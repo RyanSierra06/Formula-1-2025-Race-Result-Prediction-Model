@@ -1,7 +1,5 @@
-import pandas as pd
 from get_race_data import get_all_races_in_year
 from build_dataframe import build_grandprix_results_dataframe
-from build_model import featurize_data
 
 def build_all_csv_files():
     all_races = []

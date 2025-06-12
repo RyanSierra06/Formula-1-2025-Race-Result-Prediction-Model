@@ -21,7 +21,6 @@ def get_race_session_keys(country, location ,year):
     session_keys = {}
 
     for session in sessions:
-        encoded_session = quote(session)
         url = (
             f"https://api.openf1.org/v1/sessions?"
             f"country_name={quote(country)}&"
@@ -59,7 +58,6 @@ def get_all_races_in_year(year):
             "official_name": meeting["meeting_name"],
             "date": meeting["date_start"]
         })
-    # Sort chronologically
     return sorted(races, key=lambda x: x['date'])
 
 
