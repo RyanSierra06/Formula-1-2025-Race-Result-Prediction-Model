@@ -19,7 +19,6 @@ def featurize_data(df_raw: pd.DataFrame):
     for session in practice_sessions + other_sessions:
         best_col = f"{session}_best_lap"
         avg_col = f"{session}_avg_lap"
-        pos_col = f"{session}_position"
 
         if best_col in df:
             df[f"did_{session.replace(' ', '_')}"] = df[best_col].notna().astype(int)
@@ -125,6 +124,7 @@ def build_model(target_country, target_location, target_year=2025):
     for i, Xr in enumerate(X_list):
         for col in all_cols - set(Xr.columns):
             Xr[col] = np.nan
+
     X_train = pd.concat(X_list, ignore_index=True)
     y_train = pd.concat(y_list, ignore_index=True)
     medians = X_train.median()
