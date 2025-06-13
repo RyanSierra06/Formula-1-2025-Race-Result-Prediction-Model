@@ -1,5 +1,5 @@
 # Formula-1-2025-Race-Prediction
-Used Scikit learn's Random Forest Regressor model as well as the OpenF1 api to gather historical race data and predict the outcome for races during the 2025 Formula 1 season.
+Used Scikit learn's Random Forest Regressor model as well as the OpenF1 api to gather historical race data and predict the outcome of races during the 2025 Formula 1 season.
 
 I wrote 5 differnt python scripts, 3 of which were used to gather, transform, and featurize data, with the other 2 being used to build the model and test and train it based on the specific race the user wanted to use the algorithm on.
 
