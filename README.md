@@ -3,7 +3,7 @@ Used Scikit learn's Random Forest Regressor model as well as the OpenF1 api to g
 
 I wrote 5 differnt python scripts, 3 of which were used to gather, transform, and featurize data, with the other 2 being used to build the model and test and train it based on the specific race the user wanted to use the algorithm on.
 
-The model works by taking in all the race data from the 2023 and 2024 seasons, as well as the data from the races up to the one were predcting in the 2025 season. So for example, if were trying to predict the outcome for the Japanese Grand Prix, we train the model on all the 2023 and 2024 data, as well as the first 2 races of the 2025 season (Austrailia and China).
+The model works by taking in all the race data from the 2023 and 2024 seasons, as well as the data from the races up to the one were predcting in the 2025 season. So for example, if were trying to predict the outcome for the Japanese Grand Prix, we train the model on all the 2023 and 2024 data, as well as the first 3 races of the 2025 season (Bahrain, Austrailia, and China).
 
 Below is a short description of each file and the purpose it accomplishes:
 - get_race_data.py:
